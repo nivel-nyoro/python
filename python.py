@@ -45,22 +45,71 @@ second_name = "50.0"
 full_name = first_name+float(second_name)
 print(full_name)
 
+# looping (while)
+student_name = input("enter you name:")
+while student_name == "":
+    print("name not entered")
+    student_name = input("enter your name:")
+print("hello" + student_name)
 
-#looping i.e repeating
-i = 1
-while i < 7:
-    print(i)
-    i += 1
+# if elif and else
+name = input("enter your name:")
+if name == "ben":
+    evil_type = input("enter your evil type")
+    if evil_type == "yes":
+        print("get away evil ben")
+    else:
+        print("welcome good ben")
+        exit()
+    print("you are not allowed here ben get away!!!")
+else:
+    print("welcome" +name+ "to our coffee shop")
 
 
 
-#looping
-i = 0
-while i < 6:
-    i += 1
-    if i == 3:
-        continue
-        print("the answer is" ,i)
+
+#for loop
+estates = ["karen", "kileleshwa", "benjamina", "stannia"]
+for x in estates:
+    print(x)
+
+#list using square brackets
+estates = ["karen", "kileleshwa", "benjamina", "stannia"]
+print(estates)
+
+#range function
+for x in range(5):
+    print("nigel")
+
+#while loop
+x = 1
+while x <= 5:
+    print("python")
+    x += 1
+else:
+    print("finished")
+
+
+
+#nested loops
+adj = ["big", "tasty", "yummy"]
+fruit = ["apple", "banana", "cherry"]
+for x in adj:
+    print(x)
+    for y in fruit:
+        print(y)
+
+
+
+
+name = [input("first_name:"), input("second_name:"), input("last_name:")]
+space = [input(""), input(""), input("")]
+for x in name:
+    print(x)
+    for y in space:
+        print(y)
+
+
 
 
 
